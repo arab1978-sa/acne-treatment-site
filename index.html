@@ -4,36 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курс лечения акне</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
+        /* Общие стили */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #f4f4f9;
             color: #333;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
         h1, h2 {
             color: #003366;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
+            font-size: 2.5rem;
             margin-bottom: 20px;
         }
 
         h2 {
-            margin-top: 20px;
+            font-size: 1.8rem;
+            margin-top: 40px;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            margin-bottom: 20px;
         }
 
         ul {
@@ -41,48 +50,55 @@
             margin-left: 20px;
         }
 
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Кнопка */
         .cta {
             margin-top: 30px;
             display: flex;
             justify-content: center;
-            align-items: center;
         }
 
         .cta a {
-            display: inline-block;
             text-decoration: none;
             color: #fff;
             background-color: #003366;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border-radius: 5px;
             font-size: 18px;
+            transition: background-color 0.3s;
         }
 
         .cta a:hover {
             background-color: #0055aa;
         }
 
+        /* Галерея */
         .gallery {
             margin-top: 30px;
             text-align: center;
         }
 
         .gallery img {
-            max-width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 10px;
             border-radius: 10px;
-            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
+        /* Ссылка на Instagram */
         .instagram-link {
-            margin-top: 10px;
-            font-size: 18px;
+            margin-top: 20px;
+            font-size: 1.2rem;
             text-align: center;
         }
 
         .instagram-link a {
             color: #0055aa;
             text-decoration: none;
+            font-weight: bold;
         }
 
         .instagram-link a:hover {
@@ -150,7 +166,7 @@
         <div class="gallery">
             <h2>Примеры результатов:</h2>
             <img src="https://media-hosting.imagekit.io//fd298cdcebf64f98/8b33a5af-372a-4f9f-9b2a-f77b74d54814.jpeg?Expires=1831136288&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=b6KIRk3KXFLMXZoymfEOBh51o8pPSGMSnmqrajSQDEVnjGlxjY0GK5cKIoeVvgl1JdhiUj6726BTjIl9eq-9XRSP-tKWy6uA690wtAf9dNqIw0n1iNEgPpbh9Ht1SwfG1G~evRJVdW8Rk~3N44Qrw0FyJ49LA9BhLOfoZ9ntxZqAQ3FpHlK~~etQmLPJtfEk0UswnSNdf8WsYmcMWXu2rMwpa8trwM98IIpS0FAb8FhKrspX9SKkUHbztRCldNLfEdL51l3yVoa1C0NJR8Jk01PYJhtJyUgr6zykjypHuxl5QFXGLUdVXCMlLKUvwLfKZxUbiyR~RI2r5IteOlN1Ww__" alt="Результат лечения акне">
-            <img src="https://media-hosting.imagekit.io//9304b95f973f4556/f8238329-0e3b-4161-a51a-0ee613c091f3.jpeg?Expires=1831136461&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0KLi3d4islNoKhIfq8gHCTr5OM-hqFx6r8OeS3wLzq51MXJaqHufQpDltPCaZlzyzuvTERMpSSXWqNgbSbr90YuSDt1nl2G8-E9E64rUuPRPOM0ffsiv3FQMGajzOks4P0jwBg4JlbwdRKYg8mEoqtDF4wbeZpPuCcVBVRZIFwxHSLJ4HnkO3~Eo3x4KflgBk8BCjC~toTS7L-SHWT6L0ibjjYWHFqlQacbquffyfGVtMclCCl6DdNzWhijy8WdHujlKcJM7n1LXAoHDQa36cmzkkwEZ98M-xlc2UB4Plrcp3DxYvuXz2WPDx~m3jZxIAyGOhco6OBDPvCTgUGPIHw__" alt="Результат лечения акне">
+            <img src="https://media-hosting.imagekit.io//9304b95f973f4556/f8238329-0e3b-4161-a51a-0ee613c091f3.jpeg?Expires=1831136461&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=0KLi3d4islNoKhIfq8gHCTr5OM-hqFx6r8OeS3wLzq51MXJaqHufQpDltPCaZlzyzuvTERMpSSXWqNgbSbr90YuSDt1nl2G8-E9E64rUuPRPOM0ffsiv3FQMGajzOks4P0jwBg4JlbwdRKYg8mEoqtDF4wbeZpPuCcVBVRZIFwxHSLJ4HnkO3~Eo3x4KflgBk8BCjC~toTS7L-SHWT6L0ibjjYWHFqlQacbquffyfGVtMclCCl6DdNzWhijy8WdHujlKcJM7n1LXAoHDQa36cmzkkwEZ98M-xlc2UB4Plrcp3DxYvuXz2WPDx~m3jZxIAyGOhco6OBDPvCTgUGPIHw__" alt="Результат пилинга PRX-T33">
         </div>
 
         <div class="instagram-link">
@@ -158,4 +174,4 @@
         </div>
     </div>
 </body>
-</html>
+</html
